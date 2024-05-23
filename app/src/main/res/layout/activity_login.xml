@@ -7,7 +7,7 @@
     android:layout_height="match_parent"
     android:orientation="vertical"
     android:gravity="center"
-    android:background="@drawable/pagebkg"
+    android:background="@drawable/jeepney"
     tools:context=".LoginActivity">
 
     <androidx.cardview.widget.CardView
@@ -29,10 +29,10 @@
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:text="Login"
-                android:textSize="36sp"
                 android:textAlignment="center"
-                android:textStyle="bold"
-                android:textColor="@color/lavender"/>
+                android:textColor="@color/black"
+                android:textSize="60sp"
+                android:textStyle="bold" />
 
 
             <EditText
@@ -61,24 +61,25 @@
                 android:textColor="@color/grey"/>
 
             <Button
+                android:id="@+id/login_button"
                 android:layout_width="match_parent"
                 android:layout_height="60dp"
-                android:text="Login"
-                android:id="@+id/login_button"
-                android:textSize="18sp"
                 android:layout_marginTop="30dp"
-                app:cornerRadius = "20dp"/>
+                android:backgroundTint="#EC3131"
+                android:text="Login"
+                android:textSize="18sp"
+                app:cornerRadius="20dp" />
 
             <TextView
+                android:id="@+id/signupRedirectText"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:id="@+id/signupRedirectText"
-                android:text="Not yet registered? Sign Up"
                 android:layout_gravity="center"
-                android:padding="8dp"
                 android:layout_marginTop="10dp"
-                android:textSize="18sp"
-                android:textColor="@color/lavender"/>
+                android:padding="8dp"
+                android:text="Not yet registered? Sign Up"
+                android:textColor="@color/black"
+                android:textSize="18sp" />
 
         </LinearLayout>
 
